@@ -46,23 +46,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MonicaR\\.nuget\\packages\\": {},
+    "C:\\Users\\ChandrasekharA\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Projects\\Ems\\EmsWebApi\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
       "projectName": "Proarch.Ems.Infrastructure",
-      "projectPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\MonicaR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\obj\\",
+      "projectPath": "D:\\Projects\\Ems\\EmsWebApi\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\ChandrasekharA\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Ems\\EmsWebApi\\Infrastructure\\Proarch.Ems.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\MonicaR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ChandrasekharA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -75,11 +75,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
-              "projectPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
+            "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+              "projectPath": "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
             },
-            "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
-              "projectPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+            "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+              "projectPath": "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
             }
           }
         }

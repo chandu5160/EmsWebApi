@@ -20,14 +20,14 @@ namespace Proarch.Ems.Presentation.Api.Controllers
             this._roleUsecase = roleUsecase;
         }
         [HttpPost]
-        public async Task<RoleModel> PostClient([FromBody]RoleModel role)
+        public async Task<RoleModel> PostRole([FromBody]RoleModel role)
         {
             return await this._roleUsecase.AddRoleAsync(role).ConfigureAwait(false);
         }
         [HttpGet]
-        public async Task<List<RoleModel>> GetAllRole()
+        public async Task<List<RoleModel>> GetAllRoles()
         {
-            return await this._roleUsecase.GetAllRoleAsync();
+            return await this._roleUsecase.GetAllRolesAsync();
         }
 
         [HttpGet("{id}")]

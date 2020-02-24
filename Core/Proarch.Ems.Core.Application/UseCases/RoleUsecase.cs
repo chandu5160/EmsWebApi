@@ -22,9 +22,9 @@ namespace Proarch.Ems.Core.Application.UseCases
             throw new NotImplementedException();
         }
 
-        Task<List<RoleModel>> IRoleUsecase.GetAllRoleAsync()
+        Task<List<RoleModel>> IRoleUsecase.GetAllRolesAsync()
         {
-            return this._roleRepository.GetAllRoleAsync();
+            return this._roleRepository.GetAllRolesAsync();
         }
 
         Task<RoleModel> IRoleUsecase.GetRoleById(int id)

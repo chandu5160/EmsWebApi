@@ -9,7 +9,7 @@ namespace Proarch.Ems.Core.Application.Repositories
     public interface IRoleRepository
     {
         Task<RoleModel> AddRoleAsync(RoleModel role);
-        Task<List<RoleModel>> GetAllRoleAsync();
+        Task<List<RoleModel>> GetAllRolesAsync();
         Task<RoleModel> GetRoleById(int id);
     }
 }

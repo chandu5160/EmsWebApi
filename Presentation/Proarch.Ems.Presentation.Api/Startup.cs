@@ -66,7 +66,7 @@ namespace Proarch.Ems.Presentation.Api
             });
 
             app.UseCors(builder =>
-               builder.WithOrigins("*")
+               builder.WithOrigins("http://localhost:4200")
                    .AllowAnyOrigin()
                    .AllowAnyHeader()
                    .AllowAnyMethod()

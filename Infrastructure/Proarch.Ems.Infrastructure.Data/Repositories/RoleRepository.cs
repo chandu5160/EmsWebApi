@@ -31,9 +31,9 @@ namespace Proarch.Ems.Infrastructure.Data.Repositories
             return this._mapper.Map<RoleModel>(roleEntity);
         }
 
-       async Task<List<RoleModel>> IRoleRepository.GetAllRoleAsync()
+       async Task<List<RoleModel>> IRoleRepository.GetAllRolesAsync()
         {
-            var roleList = await this._context.Project.ToListAsync();
+            var roleList = await this._context.Role.ToListAsync();
             return this._mapper.Map<List<RoleModel>>(roleList);
         }
 

@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\MonicaR\\.nuget\\packages\\": {},
+    "C:\\Users\\ChandrasekharA\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
+      "projectUniqueName": "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
       "projectName": "Proarch.Ems.Core.Domain",
-      "projectPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
-      "packagesPath": "C:\\Users\\MonicaR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\obj\\",
+      "projectPath": "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
+      "packagesPath": "C:\\Users\\ChandrasekharA\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\MonicaR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ChandrasekharA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

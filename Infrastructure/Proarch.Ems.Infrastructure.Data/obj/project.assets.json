@@ -890,7 +890,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "sJ1LE5efGnt59RHI6uyzSknC+plSS+MDIKkyaCm2Qjc1lw2/hjfeHaB4r1WpmcfTAhp/bfGKdx66WNJgL98KmA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -904,7 +904,7 @@
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "sha512": "Ifd5VH6aCnGChjrG9ZNMkt19LU+fEpr5Hj//76Xv8lx01qRrUsCl1iOu1NdCHR5XlEAAP5jYWFzDRbtPq8T3sw==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
@@ -1138,7 +1138,7 @@
       ]
     },
     "System.IO/4.3.0": {
-      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "sha512": "dDSLY3xDH6pcc0P1JgU1ZKdoqYgYvvtka/5fsz8YddA9BBP82j1aZWWuwrOV3UwkKm6vGwxG0xWHlbR//65Xdw==",
       "type": "package",
       "path": "system.io/4.3.0",
       "files": [
@@ -1218,7 +1218,7 @@
       ]
     },
     "System.Reflection/4.3.0": {
-      "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+      "sha512": "hm/vgYR0JhV8FnQHbr9Y8FKrJeYX4wAL3Esq+/2biqw3AO34FpJzKY7VMw2Inv0PUzXuuCpogKHWONox6+9gpQ==",
       "type": "package",
       "path": "system.reflection/4.3.0",
       "files": [
@@ -1298,7 +1298,7 @@
       ]
     },
     "System.Reflection.Emit/4.3.0": {
-      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "sha512": "kYigKOY8wB2lt3KZmqX1NKYelxKctQEuAy3hiJLZkxMNHc0HY4Pc0urIf7CjdR+z3ug6e0LXuVeGuIw+MJTrfA==",
       "type": "package",
       "path": "system.reflection.emit/4.3.0",
       "files": [
@@ -1333,7 +1333,7 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
-      "sha512": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
+      "sha512": "mxa426FFBcSp74S72QMJt++qYtaQ9pPKOVK+KablbqVM8KeK8UlFP9bMgWUWSW/YFiOdhCirKKECWi+ukNvFuQ==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
@@ -1377,7 +1377,7 @@
       ]
     },
     "System.Reflection.Primitives/4.3.0": {
-      "sha512": "5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+      "sha512": "RcbHtIK78OTlgeBqkQwmiTNwBUdc3cS3m6/zed2tztgCPCT/Vp6LYR0CFfbOoOdzKY2G9TVpLtPBPz1dzPkciA==",
       "type": "package",
       "path": "system.reflection.primitives/4.3.0",
       "files": [
@@ -1433,7 +1433,7 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "sha512": "zt4jqZdmw5LVIzmBgNw6YiuT3H91iKFBFEclXq1CPPZUxH3kfemLt30XJWIOfJB4Su6UN/Z5E5HvdVnXp6rYBw==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
@@ -1524,7 +1524,7 @@
       ]
     },
     "System.Text.Encoding/4.3.0": {
-      "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+      "sha512": "QCc+kA3bXEweLK5tCzMrLylGER+d8VC0vqnPx3fiXIj7pH92L14kUtjXdTXIMykVUqHU7NhaGxQFnLxKQ/42ww==",
       "type": "package",
       "path": "system.text.encoding/4.3.0",
       "files": [
@@ -1591,7 +1591,7 @@
       ]
     },
     "System.Threading.Tasks/4.3.0": {
-      "sha512": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+      "sha512": "YiLdoqeUith08G2JfLjbijnBOpuhAKU1mzzS027dOmA0TSrk36TpIhUYVGv4bYfCl1ah3vMvsW8NJ//O5450ww==",
       "type": "package",
       "path": "system.threading.tasks/4.3.0",
       "files": [
@@ -1686,23 +1686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MonicaR\\.nuget\\packages\\": {},
+    "C:\\Users\\ChandrasekharA\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
+      "projectUniqueName": "D:\\Projects\\Ems\\EmsWebApi\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
       "projectName": "Proarch.Ems.Infrastructure.Data",
-      "projectPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
-      "packagesPath": "C:\\Users\\MonicaR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\obj\\",
+      "projectPath": "D:\\Projects\\Ems\\EmsWebApi\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
+      "packagesPath": "C:\\Users\\ChandrasekharA\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Ems\\EmsWebApi\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\MonicaR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ChandrasekharA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1715,14 +1715,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
-              "projectPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
+            "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+              "projectPath": "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
             },
-            "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
-              "projectPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+            "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+              "projectPath": "D:\\Projects\\Ems\\EmsWebApi\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
             },
-            "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\MonicaR\\February2020\\EMS\\EmsProject\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj"
+            "D:\\Projects\\Ems\\EmsWebApi\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
+              "projectPath": "D:\\Projects\\Ems\\EmsWebApi\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj"
             }
           }
         }
