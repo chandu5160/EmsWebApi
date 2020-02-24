@@ -17,8 +17,12 @@ namespace Proarch.Ems.Infrastructure.Data.Automapper
             CreateMap<UserStoryEntity, UserStoryModel>().ReverseMap();
             CreateMap<TaskTimeEntity, TaskTimeModel>().ReverseMap();
             CreateMap<TaskTimeEntity, TaskTimeDto>().ReverseMap();
+            CreateMap<EmployeeEntity, EmployeeModel>().ReverseMap();
+            CreateMap<RoleEntity, RoleModel>().ReverseMap();
+
+
         }
 
-       
+
     }
 }
