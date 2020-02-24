@@ -9,3 +9,14 @@ C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Core\Proarch.Ems.Core.A
 C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.csproj.CopyComplete
 C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.dll
 C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.pdb
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.deps.json
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.dll
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.pdb
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.dll
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.pdb
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.csprojAssemblyReference.cache
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.AssemblyInfoInputs.cache
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.AssemblyInfo.cs
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.csproj.CopyComplete
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.dll
+D:\Projects\Ems\EmsWebApi\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.pdb

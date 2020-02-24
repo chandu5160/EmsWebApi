@@ -11,3 +11,16 @@ C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.
 C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.csproj.CopyComplete
 C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.dll
 C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.pdb
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.deps.json
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.dll
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.pdb
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.dll
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.dll
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.pdb
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.pdb
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.csprojAssemblyReference.cache
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.AssemblyInfoInputs.cache
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.AssemblyInfo.cs
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.csproj.CopyComplete
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.dll
+D:\Projects\Ems\EmsWebApi\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.pdb

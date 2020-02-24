@@ -1,16 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Proarch.Ems.Infrastructure.Data.Common;
 using Proarch.Ems.Presentation.Api.Extensions;
 using AutoMapper;
@@ -32,14 +25,20 @@ namespace Proarch.Ems.Presentation.Api
         {
             services.AddControllers();
 
+           
+
             services.AddDbContext<EmsDbContext>(options =>
             {
                 options.UseMySql(Configuration.GetConnectionString("EMSDbContext"));
             });
 
+            
+
             services.AddAutoMapper(typeof(AutomapperProfile));
 
             services.AddControllersWithViews();
+
+            services.AddCors();
 
             services.RegisterDependencies();
         }
@@ -60,17 +59,19 @@ namespace Proarch.Ems.Presentation.Api
 
             app.UseAuthorization();
 
+
+            app.UseCors(builder =>
+               builder
+                   .AllowAnyOrigin()
+                   .AllowAnyHeader()
+                   .AllowAnyMethod()
+                   );
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
 
-            app.UseCors(builder =>
-               builder.WithOrigins("http://localhost:4200")
-                   .AllowAnyOrigin()
-                   .AllowAnyHeader()
-                   .AllowAnyMethod()
-                   );
         }
     }
 }
