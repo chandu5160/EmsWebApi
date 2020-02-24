@@ -1,0 +1,17 @@
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.dll
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.dll
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.dll
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.deps.json
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.runtimeconfig.json
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.runtimeconfig.dev.json
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.dll
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.pdb
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.pdb
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.pdb
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.pdb
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.csproj.CopyComplete
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.dll
+C:\Users\MonicaR\February2020\EMS\EmsProject\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure.Data\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.Data.pdb
