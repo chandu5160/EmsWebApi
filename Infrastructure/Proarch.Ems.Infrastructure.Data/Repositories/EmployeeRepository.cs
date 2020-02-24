@@ -3,9 +3,6 @@ using Proarch.Ems.Core.Application.Repositories;
 using Proarch.Ems.Core.Domain.Models;
 using Proarch.Ems.Infrastructure.Data.Common;
 using Proarch.Ems.Infrastructure.Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Proarch.Ems.Infrastructure.Data.Repositories
@@ -19,10 +16,7 @@ namespace Proarch.Ems.Infrastructure.Data.Repositories
         {
             this._context = context;
             this._mapper = mapper;
-
         }
-
-
 
         async Task<EmployeeModel> IEmployeeRepository.AddEmployeeAsync(EmployeeModel employee)
         {

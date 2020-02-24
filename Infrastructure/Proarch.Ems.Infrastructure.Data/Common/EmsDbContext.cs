@@ -37,6 +37,8 @@ namespace Proarch.Ems.Infrastructure.Data.Common
 
             modelBuilder.ApplyConfiguration(new EmployeeEntityConfiguration());
 
+            modelBuilder.ApplyConfiguration(new RoleEntityConfiguration());
+
         }
     }
 }

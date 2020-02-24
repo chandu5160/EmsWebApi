@@ -12,6 +12,8 @@ namespace Proarch.Ems.Infrastructure.Data.Configurations
         void IEntityTypeConfiguration<EmployeeEntity>.Configure(EntityTypeBuilder<EmployeeEntity> builder)
         {
             builder.HasKey(e => e.Id);
+            builder.Property(e => e.EmployeeId).IsRequired();
+            builder.HasIndex(e => e.EmployeeId).IsUnique();
             builder.Property(e => e.Name).IsRequired();
             builder.Property(e => e.Password).IsRequired();
             builder.HasOne(e => e.Project)

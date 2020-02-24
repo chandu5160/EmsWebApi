@@ -41,6 +41,9 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8");
@@ -59,6 +62,9 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId")
+                        .IsUnique();
 
                     b.HasIndex("ProjectId");
 
@@ -97,6 +103,7 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8");
 
                     b.Property<int>("RoleId")
@@ -107,7 +114,7 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Role");
+                    b.ToTable("Ems_Role");
                 });
 
             modelBuilder.Entity("Proarch.Ems.Infrastructure.Data.Entities.TaskTimeEntity", b =>

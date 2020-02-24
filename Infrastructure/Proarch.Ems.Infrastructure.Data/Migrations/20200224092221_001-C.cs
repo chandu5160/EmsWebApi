@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Proarch.Ems.Infrastructure.Data.Migrations
 {
-    public partial class _001M : Migration
+    public partial class _001C : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -23,18 +23,18 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Role",
+                name: "Ems_Role",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Status = table.Column<bool>(nullable: false),
                     RoleId = table.Column<int>(nullable: false),
-                    Name = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Role", x => x.Id);
+                    table.PrimaryKey("PK_Ems_Role", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -65,6 +65,7 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Status = table.Column<bool>(nullable: false),
+                    EmployeeId = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     Password = table.Column<string>(nullable: false),
                     ProjectId = table.Column<int>(nullable: false),
@@ -80,9 +81,9 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Ems_Employee_Role_RoleId",
+                        name: "FK_Ems_Employee_Ems_Role_RoleId",
                         column: x => x.RoleId,
-                        principalTable: "Role",
+                        principalTable: "Ems_Role",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -133,6 +134,12 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Ems_Employee_EmployeeId",
+                table: "Ems_Employee",
+                column: "EmployeeId",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Ems_Employee_ProjectId",
                 table: "Ems_Employee",
                 column: "ProjectId");
@@ -167,7 +174,7 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 name: "Ems_TaskTime");
 
             migrationBuilder.DropTable(
-                name: "Role");
+                name: "Ems_Role");
 
             migrationBuilder.DropTable(
                 name: "Ems_UserStory");

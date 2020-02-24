@@ -9,8 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Automapper\" />
-    <Folder Include="Exceptions\" />
     <Folder Include="Repositories\Dto\" />
   </ItemGroup>
 
