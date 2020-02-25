@@ -8,6 +8,8 @@ using Proarch.Ems.Infrastructure.Data.Common;
 using Proarch.Ems.Presentation.Api.Extensions;
 using AutoMapper;
 using Proarch.Ems.Infrastructure.Data.Automapper;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Serialization;
 
 namespace Proarch.Ems.Presentation.Api
 {
@@ -24,15 +26,21 @@ namespace Proarch.Ems.Presentation.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddMvc(setupAction => {
+                setupAction.EnableEndpointRouting = false;
+            }).AddJsonOptions(jsonOptions =>
+            {
+                jsonOptions.JsonSerializerOptions.PropertyNamingPolicy = null;
+            })
+          .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
-           
 
             services.AddDbContext<EmsDbContext>(options =>
             {
                 options.UseMySql(Configuration.GetConnectionString("EMSDbContext"));
             });
 
-            
+
 
             services.AddAutoMapper(typeof(AutomapperProfile));
 
