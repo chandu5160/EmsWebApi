@@ -9,7 +9,7 @@ using Proarch.Ems.Infrastructure.Data.Common;
 namespace Proarch.Ems.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(EmsDbContext))]
-    [Migration("20200225111829_001-c")]
+    [Migration("20200225113703_001-c")]
     partial class _001c
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,11 +39,8 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Proarch.Ems.Infrastructure.Data.Entities.EmployeeEntity", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
                     b.Property<int>("EmployeeId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -62,13 +59,7 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         .HasColumnType("int")
                         .HasDefaultValue(1);
 
-                    b.Property<bool>("Status")
-                        .HasColumnType("tinyint(1)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EmployeeId")
-                        .IsUnique();
+                    b.HasKey("EmployeeId");
 
                     b.HasIndex("ProjectId");
 
@@ -147,7 +138,6 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
             modelBuilder.Entity("Proarch.Ems.Infrastructure.Data.Entities.UserStoryEntity", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<int>("DefaultHours")
@@ -170,8 +160,6 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("EmployeeId");
 
                     b.HasIndex("ProjectId");
 
@@ -215,7 +203,7 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 {
                     b.HasOne("Proarch.Ems.Infrastructure.Data.Entities.EmployeeEntity", "Employee")
                         .WithMany()
-                        .HasForeignKey("EmployeeId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

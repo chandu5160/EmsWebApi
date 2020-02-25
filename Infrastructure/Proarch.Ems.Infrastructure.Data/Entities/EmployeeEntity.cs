@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Proarch.Ems.Infrastructure.Data.Entities
 {
-    public class EmployeeEntity : Entity
+    public class EmployeeEntity 
     {
         public int EmployeeId { get; set; }
         public string Name { get; set; }

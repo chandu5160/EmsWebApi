@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Proarch.Ems.Core.Domain.Models
 {
-    public class EmployeeModel : Model
+    public class EmployeeModel 
     {
         public int EmployeeId { get; set; }
         public string Name { get; set; }

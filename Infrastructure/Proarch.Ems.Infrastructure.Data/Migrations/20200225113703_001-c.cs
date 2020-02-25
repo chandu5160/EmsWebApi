@@ -61,10 +61,8 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 name: "Ems_Employee",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    EmployeeId = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Status = table.Column<bool>(nullable: false),
-                    EmployeeId = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     Password = table.Column<string>(nullable: false),
                     ProjectId = table.Column<int>(nullable: false),
@@ -72,7 +70,7 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Ems_Employee", x => x.Id);
+                    table.PrimaryKey("PK_Ems_Employee", x => x.EmployeeId);
                     table.ForeignKey(
                         name: "FK_Ems_Employee_Ems_Project_ProjectId",
                         column: x => x.ProjectId,
@@ -91,8 +89,7 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 name: "Ems_UserStory",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Id = table.Column<int>(nullable: false),
                     Status = table.Column<bool>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     IsRecurring = table.Column<bool>(nullable: false),
@@ -104,10 +101,10 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 {
                     table.PrimaryKey("PK_Ems_UserStory", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Ems_UserStory_Ems_Employee_EmployeeId",
-                        column: x => x.EmployeeId,
+                        name: "FK_Ems_UserStory_Ems_Employee_Id",
+                        column: x => x.Id,
                         principalTable: "Ems_Employee",
-                        principalColumn: "Id",
+                        principalColumn: "EmployeeId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Ems_UserStory_Ems_Project_ProjectId",
@@ -140,12 +137,6 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Ems_Employee_EmployeeId",
-                table: "Ems_Employee",
-                column: "EmployeeId",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Ems_Employee_ProjectId",
                 table: "Ems_Employee",
                 column: "ProjectId");
@@ -164,11 +155,6 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 name: "IX_Ems_TaskTime_UserStoryId",
                 table: "Ems_TaskTime",
                 column: "UserStoryId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Ems_UserStory_EmployeeId",
-                table: "Ems_UserStory",
-                column: "EmployeeId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Ems_UserStory_ProjectId",
