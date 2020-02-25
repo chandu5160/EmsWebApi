@@ -28,7 +28,7 @@ namespace Proarch.Ems.Presentation.Api.Controllers
             {
                 return BadRequest();
             }
-            taskTime.Date = DateTime.Now.Date;
+            taskTime.Date = DateTime.Now;
             var newTaskTime = await this._taskTimeUsecase.AddTaskTime(taskTime);
             return Created("created new task-time", newTaskTime);
         }

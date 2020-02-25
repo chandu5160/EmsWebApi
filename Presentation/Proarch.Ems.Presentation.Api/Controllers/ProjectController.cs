@@ -34,7 +34,7 @@ namespace Proarch.Ems.Presentation.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllProjects()
         {
-            var allProjects = await this._projectUsecase.GetAllProjectsAsync());
+            var allProjects = await this._projectUsecase.GetAllProjectsAsync();
             if (allProjects == null)
             {
                 return NotFound();

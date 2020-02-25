@@ -16,5 +16,9 @@ namespace Proarch.Ems.Infrastructure.Data.Entities
         public int ProjectId { get; set; }
 
         public ProjectEntity Project { get; set; }
+
+        public int EmployeeId { get; set; }
+
+        public EmployeeEntity Employee { get; set; }
     }
 }

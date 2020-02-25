@@ -24,7 +24,7 @@ namespace Proarch.Ems.Presentation.Api.Controllers
             {
                 return BadRequest();
             }
-            var newEmployee = this._employeeUsecase.AddEmployeeAsync(employee).ConfigureAwait(false);
+            var newEmployee =await this._employeeUsecase.AddEmployeeAsync(employee).ConfigureAwait(false);
             return Ok(newEmployee);
         }
 

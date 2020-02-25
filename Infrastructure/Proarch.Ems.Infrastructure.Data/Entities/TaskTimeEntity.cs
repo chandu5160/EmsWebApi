@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Proarch.Ems.Infrastructure.Data.Entities
 {
@@ -8,11 +6,11 @@ namespace Proarch.Ems.Infrastructure.Data.Entities
     {
         public int Id { get; set; }
 
-        public int Hours { get; }
+        public int Hours { get; set; }
 
-        public string Remarks { get; }
+        public string Remarks { get; set; }
 
-        public DateTime Date { get; }
+        public DateTime Date { get; set; }
 
         public int UserStoryId { get; set; }
 

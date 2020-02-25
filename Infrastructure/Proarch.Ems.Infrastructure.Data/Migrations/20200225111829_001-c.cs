@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Proarch.Ems.Infrastructure.Data.Migrations
 {
-    public partial class _001C : Migration
+    public partial class _001c : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -97,11 +97,18 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     Name = table.Column<string>(nullable: false),
                     IsRecurring = table.Column<bool>(nullable: false),
                     DefaultHours = table.Column<int>(type: "int", nullable: false),
-                    ProjectId = table.Column<int>(nullable: false)
+                    ProjectId = table.Column<int>(nullable: false),
+                    EmployeeId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Ems_UserStory", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Ems_UserStory_Ems_Employee_EmployeeId",
+                        column: x => x.EmployeeId,
+                        principalTable: "Ems_Employee",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Ems_UserStory_Ems_Project_ProjectId",
                         column: x => x.ProjectId,
@@ -159,6 +166,11 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 column: "UserStoryId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Ems_UserStory_EmployeeId",
+                table: "Ems_UserStory",
+                column: "EmployeeId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Ems_UserStory_ProjectId",
                 table: "Ems_UserStory",
                 column: "ProjectId");
@@ -167,19 +179,19 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Ems_Employee");
-
-            migrationBuilder.DropTable(
                 name: "Ems_TaskTime");
-
-            migrationBuilder.DropTable(
-                name: "Ems_Role");
 
             migrationBuilder.DropTable(
                 name: "Ems_UserStory");
 
             migrationBuilder.DropTable(
+                name: "Ems_Employee");
+
+            migrationBuilder.DropTable(
                 name: "Ems_Project");
+
+            migrationBuilder.DropTable(
+                name: "Ems_Role");
 
             migrationBuilder.DropTable(
                 name: "Ems_client");

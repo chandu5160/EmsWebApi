@@ -151,6 +151,9 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     b.Property<int>("DefaultHours")
                         .HasColumnType("int");
 
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsRecurring")
                         .HasColumnType("tinyint(1)");
 
@@ -165,6 +168,8 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
 
                     b.HasIndex("ProjectId");
 
@@ -206,6 +211,12 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Proarch.Ems.Infrastructure.Data.Entities.UserStoryEntity", b =>
                 {
+                    b.HasOne("Proarch.Ems.Infrastructure.Data.Entities.EmployeeEntity", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Proarch.Ems.Infrastructure.Data.Entities.ProjectEntity", "Project")
                         .WithMany()
                         .HasForeignKey("ProjectId")

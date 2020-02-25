@@ -9,8 +9,8 @@ using Proarch.Ems.Infrastructure.Data.Common;
 namespace Proarch.Ems.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(EmsDbContext))]
-    [Migration("20200225045350_001-C")]
-    partial class _001C
+    [Migration("20200225111829_001-c")]
+    partial class _001c
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -153,6 +153,9 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     b.Property<int>("DefaultHours")
                         .HasColumnType("int");
 
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsRecurring")
                         .HasColumnType("tinyint(1)");
 
@@ -167,6 +170,8 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
 
                     b.HasIndex("ProjectId");
 
@@ -208,6 +213,12 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Proarch.Ems.Infrastructure.Data.Entities.UserStoryEntity", b =>
                 {
+                    b.HasOne("Proarch.Ems.Infrastructure.Data.Entities.EmployeeEntity", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Proarch.Ems.Infrastructure.Data.Entities.ProjectEntity", "Project")
                         .WithMany()
                         .HasForeignKey("ProjectId")

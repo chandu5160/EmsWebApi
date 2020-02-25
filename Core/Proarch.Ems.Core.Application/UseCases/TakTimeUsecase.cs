@@ -21,7 +21,7 @@ namespace Proarch.Ems.Core.Application.UseCases
 
         Task<TaskTimeModel> ITaskTimeUsecase.AddTaskTime(TaskTimeModel taskTime)
         {
-            taskTime.Date =taskTime.Date;
+            taskTime.Date =taskTime.Date.Date;
             return this._taskTimeRepository.AddTaskTime(taskTime);
         }
 

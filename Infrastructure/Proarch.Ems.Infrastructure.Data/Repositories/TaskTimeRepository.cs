@@ -36,19 +36,25 @@ namespace Proarch.Ems.Infrastructure.Data.Repositories
 
        async Task<List<TaskTimeDto>> ITaskTimeRepository.GetAllTaskTimesByEmpId(int id)
         {
-            var date1 = DateTime.Now.AddDays(-10);
-            var date2 = DateTime.Now;
+            var date1 = DateTime.Now.AddDays(-10).Date;
+            var date2 = DateTime.Now.Date;
 
-            var result = await this._context.TaskTime
-                                   .Where(t =>
-                                            date1 >= t.Date
-                                         &&
-                                            t.Date <= date2
-                                         &&
-                                            t.UserStory.ProjectId == id)
-                                   .ToListAsync();
 
-            return this._mapper.Map<List<TaskTimeDto>>(result);
+            var result = await this._context.TaskTime.Join(
+                _context.UserStorie,
+                taskTime => taskTime.UserStoryId,
+                userStory => userStory.Id,
+                (taskTime, userStory) => new
+                {
+                    Id = taskTime.Id,
+                    Hours=taskTime.Hours,
+                    Remarks=taskTime.Remarks,
+                    userStory = userStory
+                    
+                }
+                ).ToListAsync();
+
+            return  this._mapper.Map<List<TaskTimeDto>>(result);
 
         }
     }
