@@ -9,7 +9,7 @@ using Proarch.Ems.Infrastructure.Data.Common;
 namespace Proarch.Ems.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(EmsDbContext))]
-    [Migration("20200224092221_001-C")]
+    [Migration("20200225045350_001-C")]
     partial class _001C
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,7 +58,9 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("RoleId")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(1);
 
                     b.Property<bool>("Status")
                         .HasColumnType("tinyint(1)");
@@ -107,9 +109,6 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8");
-
-                    b.Property<int>("RoleId")
-                        .HasColumnType("int");
 
                     b.Property<bool>("Status")
                         .HasColumnType("tinyint(1)");

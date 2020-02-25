@@ -56,7 +56,9 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("RoleId")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(1);
 
                     b.Property<bool>("Status")
                         .HasColumnType("tinyint(1)");
@@ -105,9 +107,6 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8");
-
-                    b.Property<int>("RoleId")
-                        .HasColumnType("int");
 
                     b.Property<bool>("Status")
                         .HasColumnType("tinyint(1)");

@@ -22,6 +22,7 @@ namespace Proarch.Ems.Infrastructure.Data.Configurations
             builder.HasOne(e => e.Role)
                .WithMany()
                .HasForeignKey(e => e.RoleId);
+            builder.Property(e => e.RoleId).HasDefaultValue(1);
             builder.ToTable("Ems_Employee");
 
         }

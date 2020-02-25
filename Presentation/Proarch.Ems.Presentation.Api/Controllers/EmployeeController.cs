@@ -16,6 +16,7 @@ namespace Proarch.Ems.Presentation.Api.Controllers
         {
             this._employeeUsecase = employeeUsecase;
         }
+
         public async Task<EmployeeModel> PostEmployee([FromBody]EmployeeModel employee)
         {
             return await this._employeeUsecase.AddEmployeeAsync(employee).ConfigureAwait(false);

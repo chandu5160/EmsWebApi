@@ -29,7 +29,6 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Status = table.Column<bool>(nullable: false),
-                    RoleId = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
@@ -69,7 +68,7 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     Name = table.Column<string>(nullable: false),
                     Password = table.Column<string>(nullable: false),
                     ProjectId = table.Column<int>(nullable: false),
-                    RoleId = table.Column<int>(nullable: false)
+                    RoleId = table.Column<int>(nullable: false, defaultValue: 1)
                 },
                 constraints: table =>
                 {
