@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Proarch.Ems.Core.Application.Contracts;
+using Proarch.Ems.Core.Application.Contracts.Dto;
 using Proarch.Ems.Core.Domain.Models;
 
 namespace Proarch.Ems.Presentation.Api.Controllers
@@ -21,5 +22,12 @@ namespace Proarch.Ems.Presentation.Api.Controllers
         {
             return await this._employeeUsecase.AddEmployeeAsync(employee).ConfigureAwait(false);
         }
+
+        [HttpPost("authenticate")]
+        public Task<EmployeeModel> Authenticate([FromBody]LoginDto employee)
+        {
+            return _employeeUsecase.Authenticate(employee);
+
+        }
     }
-}
+ }
