@@ -19,16 +19,29 @@ namespace Proarch.Ems.Presentation.Api.Controllers
         {
             this._clientUsecase = clientUsecase;
         }
+
         [HttpPost]
-        public async Task<ClientModel> PostClient([FromBody]ClientModel client)
+        public async Task<IActionResult> PostClient([FromBody]ClientModel client)
         {
-            return await this._clientUsecase.AddClientAsync(client).ConfigureAwait(false);
+            if (client == null)
+            {
+                return BadRequest();
+            }
+
+            var newclient = await this._clientUsecase.AddClientAsync(client).ConfigureAwait(false);
+            return Created("created new role client", client);
         }
 
         [HttpGet]
-        public async Task<List<ClientModel>> GetAllClients()
+        public async Task<IActionResult> GetAllClients()
         {
-            return await this._clientUsecase.GetAllClientsAsync().ConfigureAwait(false);
+            var allClients = await this._clientUsecase.GetAllClientsAsync().ConfigureAwait(false);
+            if (allClients == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(allClients);
         }
 
         [HttpDelete("{id}")]

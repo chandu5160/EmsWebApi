@@ -22,16 +22,26 @@ namespace Proarch.Ems.Presentation.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<TaskTimeModel> PostTaskTime([FromBody] TaskTimeModel taskTime)
+        public async Task<IActionResult> PostTaskTime([FromBody] TaskTimeModel taskTime)
         {
+            if (taskTime == null)
+            {
+                return BadRequest();
+            }
             taskTime.Date = DateTime.Now.Date;
-            return await this._taskTimeUsecase.AddTaskTime(taskTime);
+            var newTaskTime = await this._taskTimeUsecase.AddTaskTime(taskTime);
+            return Created("created new task-time", newTaskTime);
         }
 
         [HttpGet("{id}")]
-        public async Task<List<TaskTimeDto>> GetAllTaskTimesByEmpId(int id)
+        public async Task<IActionResult> GetAllTaskTimesByEmpId(int id)
         {
-            return await this._taskTimeUsecase.GetAllTaskTimesByEmpId(id);
+            var taskListByEmpId = await this._taskTimeUsecase.GetAllTaskTimesByEmpId(id);
+            if (taskListByEmpId == null)
+            {
+                return NotFound();
+            }
+            return Ok(taskListByEmpId);
         }
     }
 }

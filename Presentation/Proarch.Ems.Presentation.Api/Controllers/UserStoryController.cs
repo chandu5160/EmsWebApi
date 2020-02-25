@@ -21,27 +21,47 @@ namespace Proarch.Ems.Presentation.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<UserStoryModel> PostUserStory([FromBody] UserStoryModel userStoryModel)
+        public async Task<IActionResult> PostUserStory([FromBody] UserStoryModel userStoryModel)
         {
-            return await this._userStoryUsecase.AddUserStory(userStoryModel);
+            if (userStoryModel == null)
+            {
+                return BadRequest();
+            }
+            var newUserStory = await this._userStoryUsecase.AddUserStory(userStoryModel);
+            return Created("Creadted new user story", newUserStory);
         }
 
         [HttpGet("{id}")]
-        public async Task<List<UserStoryModel>> GetAllUserStoriesByEmpId(int id)
+        public async Task<IActionResult> GetAllUserStoriesByEmpId(int id)
         {
-            return await this._userStoryUsecase.GetAllUserStoriesByEmpId(id);
+            var userStoryLisByEmpId = await this._userStoryUsecase.GetAllUserStoriesByEmpId(id);
+            if (userStoryLisByEmpId == null)
+            {
+                return NotFound();
+            }
+            return Ok(userStoryLisByEmpId);
         }
 
         [HttpPut("{id}")]
-        public async Task<UserStoryModel> PutUserStory(int id, [FromBody] UserStoryModel userStoryModel)
+        public async Task<IActionResult> PutUserStory(int id, [FromBody] UserStoryModel userStoryModel)
         {
-            return await this._userStoryUsecase.UpdateUserStory(id, userStoryModel);
+            if (id != userStoryModel.Id)
+            {
+                return BadRequest();
+            }
+            var updatedUserStory = await this._userStoryUsecase.UpdateUserStory(id, userStoryModel);
+            return Ok(updatedUserStory);
         }
 
         [HttpPut("close-user-story/{id}")]
-        public async Task<UserStoryModel> CloseUserStory(int id, [FromBody] UserStoryModel userStoryModel)
+        public async Task<IActionResult> CloseUserStory(int id, [FromBody] UserStoryModel userStoryModel)
         {
-            return await this._userStoryUsecase.CloseUserStory(id, userStoryModel);
+            if (id != userStoryModel.Id)
+            {
+                return BadRequest();
+            }
+            var updatedUserStory = await this._userStoryUsecase.CloseUserStory(id, userStoryModel);
+            return Ok(updatedUserStory);
         }
     }
 

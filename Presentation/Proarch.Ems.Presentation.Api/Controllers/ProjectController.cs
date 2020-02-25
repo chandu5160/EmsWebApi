@@ -21,21 +21,37 @@ namespace Proarch.Ems.Presentation.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ProjectModel> PostProject([FromBody]ProjectModel project)
+        public async Task<IActionResult> PostProject([FromBody]ProjectModel project)
         {
-            return await this._projectUsecase.AddProjectAsync(project);
+            if(project == null)
+            {
+                return BadRequest();
+            }
+            var newProject= await this._projectUsecase.AddProjectAsync(project);
+            return Created("created new Project", newProject);
         }
 
         [HttpGet]
-        public async Task<List<ProjectModel>> GetAllProjects()
+        public async Task<IActionResult> GetAllProjects()
         {
-            return await this._projectUsecase.GetAllProjectsAsync();
+            var allProjects = await this._projectUsecase.GetAllProjectsAsync());
+            if (allProjects == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(allProjects);
         }
 
         [HttpGet("{id}")]
-        public async Task<ProjectModel> GetProjectById(int id)
+        public async Task<IActionResult> GetProjectById(int id)
         {
-            return await this._projectUsecase.GetProjectById(id);
+            var projectById= await this._projectUsecase.GetProjectById(id);
+            if (projectById == null)
+            {
+                return NotFound();
+            }
+            return Ok(projectById);
         }
 
         [HttpDelete("{id}")]

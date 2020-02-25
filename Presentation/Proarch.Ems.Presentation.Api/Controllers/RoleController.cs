@@ -21,21 +21,37 @@ namespace Proarch.Ems.Presentation.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<RoleModel> PostRole([FromBody]RoleModel role)
+        public async Task<IActionResult> PostRole([FromBody]RoleModel role)
         {
-            return await this._roleUsecase.AddRoleAsync(role).ConfigureAwait(false);
+            if (role == null)
+            {
+                return BadRequest();
+            }
+            var newRole = await this._roleUsecase.AddRoleAsync(role).ConfigureAwait(false);
+            return Created("created new role", newRole);
         }
 
         [HttpGet]
-        public async Task<List<RoleModel>> GetAllRoles()
+        public async Task<IActionResult> GetAllRoles()
         {
-            return await this._roleUsecase.GetAllRolesAsync();
+            var allRoles =await this._roleUsecase.GetAllRolesAsync();
+            if (allRoles == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(allRoles);
         }
 
         [HttpGet("{id}")]
-        public async Task<RoleModel> GetRoleById(int id)
+        public async Task<IActionResult> GetRoleById(int id)
         {
-            return await this._roleUsecase.GetRoleById(id);
+            var roleById = await this._roleUsecase.GetRoleById(id);
+            if (roleById == null)
+            {
+                return NotFound();
+            }
+            return Ok(roleById);
         }
     }
 }

@@ -18,15 +18,25 @@ namespace Proarch.Ems.Presentation.Api.Controllers
             this._employeeUsecase = employeeUsecase;
         }
 
-        public async Task<EmployeeModel> PostEmployee([FromBody]EmployeeModel employee)
+        public async Task<IActionResult> PostEmployee([FromBody]EmployeeModel employee)
         {
-            return await this._employeeUsecase.AddEmployeeAsync(employee).ConfigureAwait(false);
+            if(employee == null)
+            {
+                return BadRequest();
+            }
+            var newEmployee = this._employeeUsecase.AddEmployeeAsync(employee).ConfigureAwait(false);
+            return Ok(newEmployee);
         }
 
         [HttpPost("authenticate")]
-        public Task<EmployeeModel> Authenticate([FromBody]LoginDto employee)
+        public async Task<IActionResult> Authenticate([FromBody]LoginDto employee)
         {
-            return _employeeUsecase.Authenticate(employee);
+            if (employee == null)
+            {
+                return BadRequest();
+            }
+            var autEmployee = await _employeeUsecase.Authenticate(employee);
+            return Ok(autEmployee);
 
         }
     }

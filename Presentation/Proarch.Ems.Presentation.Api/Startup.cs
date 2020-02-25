@@ -26,6 +26,7 @@ namespace Proarch.Ems.Presentation.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddMvc(setupAction => {
                 setupAction.EnableEndpointRouting = false;
             }).AddJsonOptions(jsonOptions =>
