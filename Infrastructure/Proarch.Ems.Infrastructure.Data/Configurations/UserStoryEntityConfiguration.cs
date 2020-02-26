@@ -20,7 +20,7 @@ namespace Proarch.Ems.Infrastructure.Data.Configurations
                 .HasForeignKey(u => u.ProjectId);
             builder.HasOne(u => u.Employee)
                 .WithMany()
-                .HasForeignKey(u => u.Id);
+                .HasForeignKey(u => u.EmployeeId);
             builder.ToTable("Ems_UserStory");
         }
     }

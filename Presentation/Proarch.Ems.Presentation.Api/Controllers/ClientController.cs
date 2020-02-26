@@ -29,7 +29,7 @@ namespace Proarch.Ems.Presentation.Api.Controllers
             }
 
             var newclient = await this._clientUsecase.AddClientAsync(client).ConfigureAwait(false);
-            return Created("created new role client", client);
+            return Created("created new role client", newclient);
         }
 
         [HttpGet]

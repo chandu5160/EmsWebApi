@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Proarch.Ems.Infrastructure.Data.Migrations
 {
-    public partial class _001c : Migration
+    public partial class _001C : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -89,7 +89,8 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 name: "Ems_UserStory",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Status = table.Column<bool>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     IsRecurring = table.Column<bool>(nullable: false),
@@ -101,8 +102,8 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 {
                     table.PrimaryKey("PK_Ems_UserStory", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Ems_UserStory_Ems_Employee_Id",
-                        column: x => x.Id,
+                        name: "FK_Ems_UserStory_Ems_Employee_EmployeeId",
+                        column: x => x.EmployeeId,
                         principalTable: "Ems_Employee",
                         principalColumn: "EmployeeId",
                         onDelete: ReferentialAction.Cascade);
@@ -155,6 +156,11 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 name: "IX_Ems_TaskTime_UserStoryId",
                 table: "Ems_TaskTime",
                 column: "UserStoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Ems_UserStory_EmployeeId",
+                table: "Ems_UserStory",
+                column: "EmployeeId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Ems_UserStory_ProjectId",

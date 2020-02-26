@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200225123941_001-e.cs" />
+    <Compile Remove="Migrations\20200225123941_001-e.Designer.cs" />
+    <Compile Remove="Migrations\20200225124050_001-C.cs" />
+    <Compile Remove="Migrations\20200225124050_001-C.Designer.cs" />
+    <Compile Remove="Migrations\20200225124939_001-C.cs" />
+    <Compile Remove="Migrations\20200225124939_001-C.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.2">

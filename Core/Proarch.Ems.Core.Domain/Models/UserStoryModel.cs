@@ -15,7 +15,7 @@ namespace Proarch.Ems.Core.Domain.Models
 
         public int ProjectId { get; set; }
 
-        public int EmpId { get; set; }
+        public int EmployeeId { get; set; }
 
         public void AddHours(int hours)
         {
