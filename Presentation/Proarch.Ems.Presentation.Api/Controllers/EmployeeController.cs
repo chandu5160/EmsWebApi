@@ -35,6 +35,7 @@ namespace Proarch.Ems.Presentation.Api.Controllers
             {
                 return BadRequest();
             }
+
             var autEmployee = await _employeeUsecase.Authenticate(employee);
             return Ok(autEmployee);
 
